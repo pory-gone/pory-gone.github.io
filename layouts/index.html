@@ -1,0 +1,24 @@
+{{ define "main" }}
+<h1>Benvenuto!</h1>
+
+<p>Ciao! Questo è il mio blog personale dove condivido pensieri, progetti e idee.</p>
+
+<h2>Ultimi Post</h2>
+
+<ul class="post-list">
+    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+    <li>
+        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <div class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (.Site.Params.dateFormat | default "2 January 2006") }}</time>
+        </div>
+        {{ if .Summary }}
+        <p>{{ .Summary }}</p>
+        {{ end }}
+        <a href="{{ .RelPermalink }}">Leggi di più →</a>
+    </li>
+    {{ end }}
+</ul>
+
+<p><a href="/posts/">Vedi tutti i post →</a></p>
+{{ end }}
