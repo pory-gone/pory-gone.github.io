@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PORYGON.ZONE</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on PORYGON.ZONE</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;-who-i-am&#34;&gt;👾 Who I Am&lt;/h1&gt;&#xA;&lt;p&gt;Hey! I&amp;rsquo;m &lt;strong&gt;Porygone&lt;/strong&gt; and this is my digital corner where code, creativity, and a bit of healthy chaos coexist.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-what-youll-find-here&#34;&gt;🎯 What You&amp;rsquo;ll Find Here&lt;/h2&gt;&#xA;&lt;p&gt;This site is divided into three distinct zones:&lt;/p&gt;&#xA;&lt;h3 id=&#34;-blog&#34;&gt;📝 Blog&lt;/h3&gt;&#xA;&lt;p&gt;Thoughts, reflections, and articles about whatever crosses my mind. A mix between formal and informal, between technical and personal.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-portfolio&#34;&gt;💼 Portfolio&lt;/h3&gt;&#xA;&lt;p&gt;My projects, experiments, and creations. Things that work (more or less) and that I&amp;rsquo;m proud of.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example Project</title>
+      <link>http://localhost:1313/projects/esempio-progetto/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/esempio-progetto/</guid>
+      <description>&lt;h1 id=&#34;project-name&#34;&gt;Project Name&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-description&#34;&gt;📝 Description&lt;/h2&gt;&#xA;&lt;p&gt;Brief project description.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-technologies&#34;&gt;🛠️ Technologies&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Technology 1&lt;/li&gt;&#xA;&lt;li&gt;Technology 2&lt;/li&gt;&#xA;&lt;li&gt;Technology 3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-links&#34;&gt;🔗 Links&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yourusername/project&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://demo.link&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-what-i-learned&#34;&gt;💡 What I Learned&lt;/h2&gt;&#xA;&lt;p&gt;What did you learn building this project?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The First Chaotic Experiment</title>
+      <link>http://localhost:1313/chaos/primo-caos/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/chaos/primo-caos/</guid>
+      <description>&lt;h1 id=&#34;-initial-chaos&#34;&gt;🌀 Initial Chaos&lt;/h1&gt;&#xA;&lt;p&gt;This is an example post in the Chaos Zone.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; INITIALIZING CHAOS...&#xA;&amp;gt; REALITY OPTIONAL&#xA;&amp;gt; LOGIC DISABLED&#xA;&amp;gt; FUN MAXIMIZED&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here you can literally do whatever you want:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Wild code experiments&lt;/li&gt;&#xA;&lt;li&gt;ASCII art&lt;/li&gt;&#xA;&lt;li&gt;Personal memes&lt;/li&gt;&#xA;&lt;li&gt;3AM thoughts&lt;/li&gt;&#xA;&lt;li&gt;Glitch art&lt;/li&gt;&#xA;&lt;li&gt;???&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;There are no limits.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Come Creare un Blog con Hugo</title>
+      <link>http://localhost:1313/posts/hugo-tutorial/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugo-tutorial/</guid>
+      <description>&lt;p&gt;Hugo è un generatore di siti statici velocissimo scritto in Go. Ecco come iniziare!&lt;/p&gt;&#xA;&lt;h2 id=&#34;installazione&#34;&gt;Installazione&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&#xA;&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Su Linux&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Su macOS&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;h2 id=&#34;creare-un-nuovo-sito&#34;&gt;Creare un Nuovo Sito&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&#xA;&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&#xA;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site mio-blog&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd mio-blog&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;h2 id=&#34;vantaggi-di-hugo&#34;&gt;Vantaggi di Hugo&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;⚡ &lt;strong&gt;Velocità&lt;/strong&gt;: Build incredibilmente veloci&lt;/li&gt;&#xA;&lt;li&gt;🎨 &lt;strong&gt;Flessibilità&lt;/strong&gt;: Totale controllo sui layout&lt;/li&gt;&#xA;&lt;li&gt;📝 &lt;strong&gt;Markdown&lt;/strong&gt;: Scrivi in Markdown&lt;/li&gt;&#xA;&lt;li&gt;🆓 &lt;strong&gt;Gratuito&lt;/strong&gt;: 100% open source&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo è perfetto per blog personali, portfolio e documentazione!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Il Mio Primo Post</title>
+      <link>http://localhost:1313/posts/primo-post/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/primo-post/</guid>
+      <description>&lt;p&gt;Benvenuto nel mio blog! Questo è il primo post.&lt;/p&gt;&#xA;&lt;h2 id=&#34;perché-questo-blog&#34;&gt;Perché questo blog?&lt;/h2&gt;&#xA;&lt;p&gt;Ho creato questo blog per condividere i miei progetti e le mie idee con il mondo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cosa-aspettarsi&#34;&gt;Cosa aspettarsi&lt;/h2&gt;&#xA;&lt;p&gt;In questo blog troverai:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Articoli tecnici&lt;/li&gt;&#xA;&lt;li&gt;Tutorial&lt;/li&gt;&#xA;&lt;li&gt;Riflessioni personali&lt;/li&gt;&#xA;&lt;li&gt;Aggiornamenti sui miei progetti&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Stay tuned per nuovi contenuti!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | PORYGON.ZONE</title>
+    <meta name="description" content="Blog, Portfolio &amp; Chaos Zone - A glitchy digital playground">
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="site-title">PORYGON.ZONE</h1>
+            <p>Blog, Portfolio &amp; Chaos Zone - A glitchy digital playground</p>
+            <nav>
+                <ul>
+                
+                    <li><a href="/">Home</a></li>
+                
+                    <li><a href="/posts/">Blog</a></li>
+                
+                    <li><a href="/projects/">Portfolio</a></li>
+                
+                    <li><a href="/chaos/">Chaos Zone</a></li>
+                
+                    <li><a href="/about/">About</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main>
+            
+<h1>Portfolio</h1>
+
+<div class="projects-grid">
+    
+    <article class="project-card">
+        <h2><a href="/projects/esempio-progetto/">Example Project</a></h2>
+        <div class="post-meta">
+            <time>November 2025</time>
+        </div>
+        
+        <p>An example project - delete me and replace me!</p>
+        
+        
+        <div class="tags">
+            
+            <span class="tag">example</span>
+            
+            <span class="tag">template</span>
+            
+        </div>
+        
+        <a href="/projects/esempio-progetto/" class="btn">View Project →</a>
+    </article>
+    
+</div>
+
+<style>
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: rgba(0, 206, 209, 0.05);
+    border: 2px solid var(--porygon-blue);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--porygon-pink);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover::before {
+    transform: scaleY(1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--porygon-pink);
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+}
+
+.project-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.project-card h2 a {
+    color: var(--text-bright);
+}
+
+.tags {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: rgba(0, 206, 209, 0.2);
+    color: var(--porygon-cyan);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: 1px solid var(--porygon-cyan);
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Porygone | Powered by Hugo</p>
+        </div>
+    </footer>
+</body>
+</html>

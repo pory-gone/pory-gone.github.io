@@ -1,21 +1,26 @@
 ---
-title: "Il Mio Primo Post"
-date: 2025-11-29
+title: "Welcome to PORYGON.ZONE"
+date: 2025-11-30
+draft: false
+description: "First post - welcome to my digital playground"
 ---
 
-Benvenuto nel mio blog! Questo è il primo post.
+Welcome to my digital corner! This is the beginning of something glitchy and fun.
 
-## Perché questo blog?
+## Why this site?
 
-Ho creato questo blog per condividere i miei progetti e le mie idee con il mondo.
+I created this space to share my projects, thoughts, and experiments with the world. A place where code meets creativity and chaos.
 
-## Cosa aspettarsi
+## What to expect
 
-In questo blog troverai:
+On this site you'll find:
 
-- Articoli tecnici
-- Tutorial
-- Riflessioni personali
-- Aggiornamenti sui miei progetti
+- **Blog**: Technical articles, reflections, and random thoughts
+- **Portfolio**: My projects and creations
+- **Chaos Zone**: Pure digital chaos - experiments, glitch art, and things that shouldn't exist
 
-Stay tuned per nuovi contenuti!
+## The aesthetic
+
+If you're wondering about the glitchy pink and cyan theme - it's inspired by Porygon, the digital Pokémon. A tribute to the beautiful chaos of the digital world.
+
+Stay tuned for new content!

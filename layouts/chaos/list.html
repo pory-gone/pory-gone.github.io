@@ -1,0 +1,105 @@
+{{ define "main" }}
+<div class="chaos-container">
+    <h1 class="glitch" data-text="{{ .Title }}">{{ .Title }}</h1>
+    
+    <div class="chaos-content">
+        {{ .Content }}
+    </div>
+
+    {{ if eq .Kind "section" }}
+    <h2>🌪️ Chaos Archive</h2>
+    
+    <div class="chaos-list">
+        {{ range .Pages }}
+        <article class="chaos-item">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <div class="post-meta">
+                <time>{{ .Date.Format "02/01/2006" }}</time>
+            </div>
+            {{ if .Summary }}
+            <p>{{ .Summary }}</p>
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="btn">ENTER THE CHAOS →</a>
+        </article>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+
+<style>
+.chaos-container {
+    animation: chaosShake 10s infinite;
+}
+
+@keyframes chaosShake {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    10% { transform: translate(-1px, 1px) rotate(0.5deg); }
+    20% { transform: translate(1px, -1px) rotate(-0.5deg); }
+    30% { transform: translate(-1px, -1px) rotate(0.5deg); }
+    40% { transform: translate(1px, 1px) rotate(-0.5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.chaos-content {
+    position: relative;
+    padding: 2rem;
+    margin: 2rem 0;
+    background: rgba(255, 105, 180, 0.1);
+    border: 2px dashed var(--porygon-cyan);
+}
+
+.chaos-list {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.chaos-item {
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.1) 0%, rgba(0, 206, 209, 0.1) 100%);
+    border: 2px solid var(--porygon-pink);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.chaos-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(0, 255, 255, 0.1) 50%,
+        transparent 70%
+    );
+    animation: chaosShine 3s infinite;
+}
+
+@keyframes chaosShine {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.chaos-item:hover {
+    transform: scale(1.02) rotate(1deg);
+    border-color: var(--porygon-cyan);
+    box-shadow: 0 0 30px var(--porygon-pink);
+}
+
+.chaos-item h3 {
+    position: relative;
+    z-index: 1;
+}
+
+.chaos-item p,
+.chaos-item .post-meta,
+.chaos-item .btn {
+    position: relative;
+    z-index: 1;
+}
+</style>
+{{ end }}

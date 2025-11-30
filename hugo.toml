@@ -1,14 +1,14 @@
-baseURL = 'https://porygone.github.io/'
-languageCode = 'it'
-title = 'Il Mio Blog Personale'
+baseURL = 'https://pory-gone.github.io/'
+languageCode = 'en'
+title = 'PORYGON.ZONE'
 
 [params]
-  description = 'Blog personale - Pensieri, progetti e idee'
+  description = 'Blog, Portfolio & Chaos Zone - A glitchy digital playground'
   author = 'Porygone'
-  dateFormat = '2 January 2006'
+  dateFormat = 'January 2, 2006'
   
 [params.social]
-  github = 'porygone'
+  github = 'pory-gone'
 
 [menu]
   [[menu.main]]
@@ -20,9 +20,17 @@ title = 'Il Mio Blog Personale'
     url = '/posts/'
     weight = 2
   [[menu.main]]
+    name = 'Portfolio'
+    url = '/projects/'
+    weight = 3
+  [[menu.main]]
+    name = 'Chaos Zone'
+    url = '/chaos/'
+    weight = 4
+  [[menu.main]]
     name = 'About'
     url = '/about/'
-    weight = 3
+    weight = 5
 
 [markup]
   [markup.highlight]

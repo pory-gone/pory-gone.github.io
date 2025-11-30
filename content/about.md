@@ -1,18 +1,36 @@
 ---
 title: "About"
-date: 2025-11-29
+date: 2025-11-30
+description: "Who I am and what you'll find here"
 ---
 
-# Chi Sono
+# 👾 Who I Am
 
-Ciao! Sono Porygone e questo è il mio blog personale.
+Hey! I'm **Porygone** and this is my digital corner where code, creativity, and a bit of healthy chaos coexist.
 
-Qui condivido:
+## 🎯 What You'll Find Here
 
-- 💻 Progetti personali
-- 📝 Articoli tecnici
-- 💡 Idee e riflessioni
+This site is divided into three distinct zones:
 
-## Contatti
+### 📝 Blog
+Thoughts, reflections, and articles about whatever crosses my mind. A mix between formal and informal, between technical and personal.
 
-Puoi trovarmi su [GitHub](https://github.com/porygone).
+### 💼 Portfolio
+My projects, experiments, and creations. Things that work (more or less) and that I'm proud of.
+
+### ⚡ Chaos Zone
+Pure. Digital. Chaos.
+
+Wild experiments, nonsensical code, glitch art, and everything that doesn't fit anywhere else. The no-rules zone where anything can happen.
+
+## 🎨 The Style
+
+If you're wondering why this site has a glitchy aesthetic with pink and cyan colors... well, it's inspired by **Porygon**, the digital Pokémon. A tribute to the organized chaos of the digital world.
+
+## 🔗 Contact
+
+- **GitHub**: [pory-gone](https://github.com/pory-gone)
+
+---
+
+> "In a world of perfect pixels, be the glitch."

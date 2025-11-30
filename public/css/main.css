@@ -1,0 +1,460 @@
+/* Porygon Glitch Theme - Colori ispirati a Porygon */
+:root {
+  /* Colori Porygon */
+  --porygon-pink: #FF69B4;
+  --porygon-blue: #00CED1;
+  --porygon-cyan: #00FFFF;
+  --porygon-red: #FF1493;
+  --porygon-dark: #1a1a2e;
+  --porygon-darker: #0f0f1e;
+  --text-main: #e0e0e0;
+  --text-bright: #ffffff;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background-color: var(--porygon-darker);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Effetto glitch sul background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(90deg, var(--porygon-dark) 50%, transparent 50%),
+    linear-gradient(90deg, var(--porygon-blue) 50%, var(--porygon-pink) 50%);
+  background-size: 4px 4px, 100% 100%;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: -1;
+  animation: bgGlitch 8s infinite;
+}
+
+@keyframes bgGlitch {
+  0%, 100% { opacity: 0.03; }
+  50% { opacity: 0.05; }
+}
+
+/* Container principale */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+
+/* Header e Navigation */
+header {
+  border-bottom: 2px solid var(--porygon-blue);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  position: relative;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--porygon-pink);
+  transform: scaleX(0);
+  animation: glitchLine 3s infinite;
+}
+
+@keyframes glitchLine {
+  0%, 100% { transform: scaleX(0); opacity: 0; }
+  50% { transform: scaleX(0.3); opacity: 1; }
+}
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: var(--space-sm);
+  color: var(--text-bright);
+  text-shadow: 
+    2px 2px 0 var(--porygon-pink),
+    -2px -2px 0 var(--porygon-cyan);
+  animation: titleGlitch 5s infinite;
+  display: inline-block;
+}
+
+@keyframes titleGlitch {
+  0%, 90%, 100% {
+    text-shadow: 
+      2px 2px 0 var(--porygon-pink),
+      -2px -2px 0 var(--porygon-cyan);
+  }
+  92% {
+    text-shadow: 
+      -2px 2px 0 var(--porygon-cyan),
+      2px -2px 0 var(--porygon-pink);
+  }
+  94% {
+    text-shadow: 
+      2px -2px 0 var(--porygon-pink),
+      -2px 2px 0 var(--porygon-cyan);
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--porygon-cyan);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a::before {
+  content: '> ';
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+nav a:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+nav a:hover {
+  color: var(--porygon-pink);
+  border: 1px solid var(--porygon-pink);
+  box-shadow: 0 0 10px var(--porygon-pink);
+}
+
+/* Headings con effetto glitch */
+h1, h2, h3 {
+  color: var(--text-bright);
+  margin: var(--space-md) 0 var(--space-sm) 0;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-left: 4px solid var(--porygon-pink);
+  padding-left: var(--space-sm);
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-left: 3px solid var(--porygon-cyan);
+  padding-left: var(--space-sm);
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: var(--porygon-blue);
+}
+
+/* Links */
+a {
+  color: var(--porygon-blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+a:hover {
+  color: var(--porygon-pink);
+  text-shadow: 0 0 5px var(--porygon-pink);
+}
+
+/* Post list */
+.post-list {
+  list-style: none;
+  margin: var(--space-md) 0;
+}
+
+.post-list li {
+  background: rgba(255, 105, 180, 0.05);
+  border: 1px solid var(--porygon-blue);
+  border-left: 4px solid var(--porygon-pink);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.post-list li:hover {
+  background: rgba(255, 105, 180, 0.1);
+  border-color: var(--porygon-pink);
+  transform: translateX(5px);
+  box-shadow: -5px 5px 0 var(--porygon-cyan);
+}
+
+.post-title {
+  margin: 0 0 var(--space-xs) 0;
+  font-size: 1.5rem;
+}
+
+.post-title a {
+  color: var(--text-bright);
+}
+
+.post-title a:hover {
+  color: var(--porygon-pink);
+}
+
+.post-meta {
+  color: var(--porygon-cyan);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+
+.post-meta::before {
+  content: '[';
+  color: var(--porygon-pink);
+}
+
+.post-meta::after {
+  content: ']';
+  color: var(--porygon-pink);
+}
+
+/* Code blocks */
+code {
+  background: var(--porygon-dark);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  color: var(--porygon-cyan);
+  font-size: 0.9rem;
+}
+
+pre {
+  background: var(--porygon-dark);
+  border: 1px solid var(--porygon-blue);
+  border-left: 3px solid var(--porygon-pink);
+  padding: var(--space-sm);
+  overflow-x: auto;
+  margin: var(--space-sm) 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--porygon-cyan);
+  padding-left: var(--space-sm);
+  margin: var(--space-md) 0;
+  color: var(--porygon-cyan);
+  font-style: italic;
+  background: rgba(0, 206, 209, 0.05);
+  padding: var(--space-sm);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-md) 0;
+}
+
+th, td {
+  padding: var(--space-sm);
+  border: 1px solid var(--porygon-blue);
+  text-align: left;
+}
+
+th {
+  background: rgba(255, 105, 180, 0.2);
+  color: var(--text-bright);
+  font-weight: bold;
+}
+
+tr:hover {
+  background: rgba(0, 206, 209, 0.1);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--porygon-blue);
+  box-shadow: 5px 5px 0 var(--porygon-pink);
+}
+
+/* Buttons e CTA */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  color: var(--porygon-cyan);
+  border: 2px solid var(--porygon-cyan);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: var(--porygon-darker);
+  background: var(--porygon-cyan);
+  box-shadow: 0 0 20px var(--porygon-cyan);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 2px solid var(--porygon-blue);
+  text-align: center;
+  color: var(--porygon-cyan);
+  font-size: 0.9rem;
+}
+
+/* Classe speciale per la sezione CHAOS */
+.chaos-mode {
+  animation: chaosRotate 20s infinite linear;
+  position: relative;
+}
+
+@keyframes chaosRotate {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.chaos-mode::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      var(--porygon-pink) 0px,
+      transparent 2px,
+      transparent 4px,
+      var(--porygon-cyan) 4px,
+      transparent 6px,
+      transparent 10px
+    );
+  opacity: 0.05;
+  animation: chaosMove 10s infinite linear;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes chaosMove {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100px); }
+}
+
+/* Glitch effect per elementi speciali */
+.glitch {
+  position: relative;
+  color: var(--text-bright);
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.glitch::before {
+  color: var(--porygon-pink);
+  animation: glitchBefore 2s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+.glitch::after {
+  color: var(--porygon-cyan);
+  animation: glitchAfter 3s infinite;
+  clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBefore {
+  0%, 90%, 100% { transform: translate(0); }
+  92% { transform: translate(-2px, 2px); }
+  94% { transform: translate(2px, -2px); }
+}
+
+@keyframes glitchAfter {
+  0%, 90%, 100% { transform: translate(0); }
+  92% { transform: translate(2px, -2px); }
+  94% { transform: translate(-2px, 2px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    gap: var(--space-sm);
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .container {
+    padding: var(--space-sm);
+  }
+}
+
+/* Scrollbar personalizzata */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--porygon-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--porygon-blue);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--porygon-pink);
+}
+
+/* Selection */
+::selection {
+  background: var(--porygon-pink);
+  color: var(--porygon-darker);
+}

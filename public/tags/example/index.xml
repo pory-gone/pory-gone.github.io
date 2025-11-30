@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Example on PORYGON.ZONE</title>
+    <link>http://localhost:1313/tags/example/</link>
+    <description>Recent content in Example on PORYGON.ZONE</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Project</title>
+      <link>http://localhost:1313/projects/esempio-progetto/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/esempio-progetto/</guid>
+      <description>&lt;h1 id=&#34;project-name&#34;&gt;Project Name&lt;/h1&gt;&#xA;&lt;h2 id=&#34;-description&#34;&gt;📝 Description&lt;/h2&gt;&#xA;&lt;p&gt;Brief project description.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-technologies&#34;&gt;🛠️ Technologies&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Technology 1&lt;/li&gt;&#xA;&lt;li&gt;Technology 2&lt;/li&gt;&#xA;&lt;li&gt;Technology 3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-links&#34;&gt;🔗 Links&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yourusername/project&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://demo.link&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-what-i-learned&#34;&gt;💡 What I Learned&lt;/h2&gt;&#xA;&lt;p&gt;What did you learn building this project?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
