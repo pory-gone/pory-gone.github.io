@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="chaos-article">
-    <h1 class="glitch" data-text="{{ .Title }}">{{ .Title }}</h1>
+    <h1 class="glitch glitch-focus" data-text="{{ .Title }}">{{ .Title }}</h1>
     
     <div class="post-meta">
         <time>{{ .Date.Format "02/01/2006 15:04" }}</time>
@@ -25,6 +25,27 @@
 <style>
 .chaos-article {
     animation: chaosFloat 6s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    border: 2px solid rgba(255, 105, 180, 0.4);
+}
+
+.chaos-article::before,
+.chaos-article::after {
+    content: '';
+    position: absolute;
+    inset: -20%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.15), transparent 55%);
+    filter: blur(20px);
+    opacity: 0.4;
+    animation: chromaSpin 10s linear infinite;
+    pointer-events: none;
+}
+
+.chaos-article::after {
+    animation-direction: reverse;
+    mix-blend-mode: screen;
 }
 
 @keyframes chaosFloat {
@@ -35,6 +56,20 @@
 .chaos-content {
     margin: 2rem 0;
     line-height: 1.8;
+    position: relative;
+    padding: 2rem;
+    background: rgba(15, 15, 30, 0.8);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.chaos-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(0deg, transparent 0 6px, rgba(255, 255, 255, 0.03) 6px 12px);
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
 }
 
 .chaos-content img {
@@ -61,16 +96,33 @@
     padding-top: 2rem;
     border-top: 2px dashed var(--porygon-cyan);
     text-align: center;
+    position: relative;
+}
+
+.chaos-footer::after {
+    content: '///';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--porygon-pink);
+    letter-spacing: 0.3em;
 }
 
 .tag {
     display: inline-block;
-    background: var(--porygon-pink);
-    color: var(--porygon-darker);
+    background: rgba(0, 255, 255, 0.15);
+    color: var(--text-bright);
     padding: 0.2rem 0.6rem;
     border-radius: 3px;
     font-size: 0.8rem;
     margin: 0 0.2rem;
+    border: 1px solid rgba(0, 206, 209, 0.4);
+}
+
+@keyframes chromaSpin {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1.1); }
 }
 </style>
 {{ end }}

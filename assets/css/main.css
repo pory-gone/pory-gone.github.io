@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
+
 /* Porygon Glitch Theme - Colori ispirati a Porygon */
 :root {
   /* Colori Porygon */
@@ -24,11 +26,16 @@
 }
 
 body {
-  font-family: 'Courier New', monospace;
+  font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background-color: var(--porygon-darker);
+  background-image: radial-gradient(circle at 20% 20%, rgba(255, 105, 180, 0.12), transparent 45%),
+                    radial-gradient(circle at 80% 0%, rgba(0, 206, 209, 0.15), transparent 40%),
+                    radial-gradient(circle at 50% 80%, rgba(0, 255, 255, 0.1), transparent 40%);
+  background-attachment: fixed;
   color: var(--text-main);
   line-height: 1.6;
   overflow-x: hidden;
+  animation: gradientShift 20s ease-in-out infinite alternate;
 }
 
 /* Effetto glitch sul background */
@@ -49,9 +56,39 @@ body::before {
   animation: bgGlitch 8s infinite;
 }
 
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.05;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: -2;
+  animation: noiseDrift 12s linear infinite;
+}
+
 @keyframes bgGlitch {
   0%, 100% { opacity: 0.03; }
   50% { opacity: 0.05; }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%, 100% 0%, 50% 80%;
+  }
+  100% {
+    background-position: 20% 30%, 90% 20%, 40% 70%;
+  }
+}
+
+@keyframes noiseDrift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-30px, 30px); }
 }
 
 /* Container principale */
@@ -96,6 +133,7 @@ header::after {
     -2px -2px 0 var(--porygon-cyan);
   animation: titleGlitch 5s infinite;
   display: inline-block;
+  font-family: 'Space Mono', 'Space Grotesk', monospace;
 }
 
 @keyframes titleGlitch {
@@ -133,6 +171,12 @@ nav a {
   position: relative;
 }
 
+nav a:focus-visible {
+  outline: none;
+  border-color: var(--porygon-cyan);
+  box-shadow: 0 0 10px rgba(0, 206, 209, 0.6);
+}
+
 nav a::before {
   content: '> ';
   opacity: 0;
@@ -156,6 +200,7 @@ h1, h2, h3 {
   color: var(--text-bright);
   margin: var(--space-md) 0 var(--space-sm) 0;
   position: relative;
+  font-family: 'Space Mono', 'Space Grotesk', monospace;
 }
 
 h1 {
@@ -247,6 +292,7 @@ code {
   border-radius: 3px;
   color: var(--porygon-cyan);
   font-size: 0.9rem;
+  font-family: 'Space Mono', 'Space Grotesk', monospace;
 }
 
 pre {
@@ -292,6 +338,15 @@ th {
   color: var(--text-bright);
   font-weight: bold;
 }
+.glitch-focus {
+  animation: titleGlitch 5s infinite, glitchPulse 6s ease-in-out infinite;
+}
+
+.glitch-focus::before,
+.glitch-focus::after {
+  mix-blend-mode: screen;
+}
+
 
 tr:hover {
   background: rgba(0, 206, 209, 0.1);
@@ -303,6 +358,11 @@ img {
   height: auto;
   border: 2px solid var(--porygon-blue);
   box-shadow: 5px 5px 0 var(--porygon-pink);
+}
+
+@keyframes glitchPulse {
+  0%, 100% { text-shadow: 2px 2px 15px rgba(255, 105, 180, 0.4); }
+  50% { text-shadow: -2px -2px 25px rgba(0, 206, 209, 0.7); }
 }
 
 /* Buttons e CTA */
@@ -319,11 +379,31 @@ img {
   overflow: hidden;
 }
 
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: transform 0.4s ease;
+}
+
 .btn:hover {
   color: var(--porygon-darker);
   background: var(--porygon-cyan);
   box-shadow: 0 0 20px var(--porygon-cyan);
   transform: translateY(-2px);
+}
+
+.btn:hover::before {
+  transform: translateX(200%);
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 255, 255, 0.5);
 }
 
 /* Footer */
