@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="chaos-container">
-    <h1 class="glitch" data-text="{{ .Title }}">{{ .Title }}</h1>
+    <h1 class="glitch glitch-focus" data-text="{{ .Title }}">{{ .Title }}</h1>
     
     <div class="chaos-content">
         {{ .Content }}
@@ -29,6 +29,19 @@
 <style>
 .chaos-container {
     animation: chaosShake 10s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.chaos-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(255, 105, 180, 0.15), transparent 50%),
+                radial-gradient(circle at 80% 0%, rgba(0, 206, 209, 0.15), transparent 45%);
+    mix-blend-mode: screen;
+    animation: chromaPulse 12s infinite alternate;
+    pointer-events: none;
 }
 
 @keyframes chaosShake {
@@ -46,6 +59,16 @@
     margin: 2rem 0;
     background: rgba(255, 105, 180, 0.1);
     border: 2px dashed var(--porygon-cyan);
+    overflow: hidden;
+}
+
+.chaos-content::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border: 2px solid rgba(0, 255, 255, 0.15);
+    filter: blur(3px);
+    animation: borderDrift 6s linear infinite;
 }
 
 .chaos-list {
@@ -79,9 +102,34 @@
     animation: chaosShine 3s infinite;
 }
 
+.chaos-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(90deg, transparent 0 6px, rgba(255, 255, 255, 0.04) 6px 12px);
+    mix-blend-mode: color-dodge;
+    opacity: 0.4;
+    animation: scanline 2s linear infinite;
+}
+
 @keyframes chaosShine {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@keyframes chromaPulse {
+    0% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+    100% { transform: translate(-5%, 3%) scale(1.2); opacity: 0.6; }
+}
+
+@keyframes borderDrift {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes scanline {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
 }
 
 .chaos-item:hover {
