@@ -8,21 +8,21 @@ tags: ["example", "template"]
 
 # Project Name
 
-## 📝 Description
+## Description
 
 Brief project description.
 
-## 🛠️ Technologies
+## Technologies
 
 - Technology 1
 - Technology 2
 - Technology 3
 
-## 🔗 Links
+## Links
 
 - [GitHub](https://github.com/yourusername/project)
 - [Demo](https://demo.link)
 
-## 💡 What I Learned
+## What I Learned
 
 What did you learn building this project?

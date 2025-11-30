@@ -4,7 +4,7 @@ date: 2025-11-30
 layout: "chaos"
 ---
 
-# ⚡ CHAOS ZONE ⚡
+# CHAOS ZONE
 
 Welcome to the zone of pure chaos. There are no rules here.
 

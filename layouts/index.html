@@ -7,25 +7,25 @@
 
 <div class="home-sections">
     <div class="section-card">
-        <h2>📝 Blog</h2>
+        <h2>Blog</h2>
         <p>Thoughts, reflections, and articles between formal and informal.</p>
         <a href="/posts/" class="btn">Read the Blog →</a>
     </div>
     
     <div class="section-card">
-        <h2>💼 Portfolio</h2>
+        <h2>Portfolio</h2>
         <p>My projects, experiments, and digital creations.</p>
         <a href="/projects/" class="btn">View Projects →</a>
     </div>
     
     <div class="section-card chaos-card">
-        <h2>⚡ Chaos Zone</h2>
+        <h2>Chaos Zone</h2>
         <p>Pure digital chaos. Enter at your own risk.</p>
         <a href="/chaos/" class="btn">Enter the Chaos →</a>
     </div>
 </div>
 
-<h2>✨ Latest Posts</h2>
+<h2>Latest Posts</h2>
 
 <ul class="post-list">
     {{ range first 5 (where .Site.RegularPages "Section" "posts") }}

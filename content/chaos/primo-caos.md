@@ -4,7 +4,7 @@ date: 2025-11-30
 draft: true
 ---
 
-# 🌀 Initial Chaos
+# Initial Chaos
 
 This is an example post in the Chaos Zone.
 

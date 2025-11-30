@@ -14,11 +14,11 @@ This site is built with **Hugo**, an incredibly fast static site generator writt
 
 Hugo offers several advantages:
 
-- ⚡ **Speed**: Incredibly fast builds
-- 🎨 **Flexibility**: Total control over layouts
-- 📝 **Markdown**: Write content in Markdown
-- 🆓 **Free**: 100% open source
-- 🚀 **GitHub Pages**: Easy deployment
+- **Speed**: Incredibly fast builds
+- **Flexibility**: Total control over layouts
+- **Markdown**: Write content in Markdown
+- **Free**: 100% open source
+- **GitHub Pages**: Easy deployment
 
 ## Installation
 
