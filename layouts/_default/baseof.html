@@ -6,6 +6,9 @@
     <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     
+    <link rel="icon" type="image/png" sizes="32x32" href="/porygon-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
     {{ $css := resources.Get "css/main.css" }}
     {{ if $css }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
