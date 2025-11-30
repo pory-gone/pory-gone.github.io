@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.147.8"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORYGON.ZONE</title>
-    <meta name="description" content="Blog, Portfolio &amp; Chaos Zone - A glitchy digital playground">
+    <title>How This Site Was Built | PORYGON.ZONE</title>
+    <meta name="description" content="A guide on how I built this site with Hugo">
     
     
     
@@ -38,43 +37,17 @@
     <div class="container">
         <main>
             
-<div class="home-hero">
-    <h1 class="glitch glitch-focus" data-text="PORYGON.ZONE">PORYGON.ZONE</h1>
-    <p class="hero-subtitle">Blog • Portfolio • Chaos</p>
-    <p class="hero-description">A digital playground with a glitchy aesthetic. Enter the pixelated world.</p>
-</div>
-
-<div class="home-sections">
-    <div class="section-card">
-        <h2>Blog</h2>
-        <p>Thoughts, reflections, and articles between formal and informal.</p>
-        <a href="/posts/" class="btn">Read the Blog →</a>
-    </div>
-    
-    <div class="section-card">
-        <h2>Portfolio</h2>
-        <p>My projects, experiments, and digital creations.</p>
-        <a href="/projects/" class="btn">View Projects →</a>
-    </div>
-    
-    <div class="section-card chaos-card">
-        <h2>Chaos Zone</h2>
-        <p>Pure digital chaos. Enter at your own risk.</p>
-        <a href="/chaos/" class="btn">Enter the Chaos →</a>
-    </div>
-</div>
-
-<h2>Latest Posts</h2>
-
-<ul class="post-list">
-    
-    <li>
-        <h3 class="post-title"><a href="/posts/how-this-site-was-built/">How This Site Was Built</a></h3>
+<article>
+    <header>
+        <h1>How This Site Was Built</h1>
         <div class="post-meta">
             <time datetime="2025-11-30">November 30, 2025</time>
+            
         </div>
-        
-        <p><h1 id="how-i-built-this-site-with-hugo">How I Built This Site with Hugo</h1>
+    </header>
+    
+    <div class="content">
+        <h1 id="how-i-built-this-site-with-hugo">How I Built This Site with Hugo</h1>
 <p>This site is built with <strong>Hugo</strong>, an incredibly fast static site generator written in Go.</p>
 <h2 id="why-hugo">Why Hugo?</h2>
 <p>Hugo offers several advantages:</p>
@@ -128,171 +101,35 @@
 ├── static/         # Static files (copied as-is)
 └── hugo.toml       # Configuration file
 </code></pre><h2 id="custom-styling">Custom Styling</h2>
-<p>For this site, I created a custom glitchy theme inspired by Porygon with:</p></p>
-        
-        <a href="/posts/how-this-site-was-built/">Read more →</a>
-    </li>
-    
-    <li>
-        <h3 class="post-title"><a href="/posts/primo-post/">Welcome to PORYGON.ZONE</a></h3>
-        <div class="post-meta">
-            <time datetime="2025-11-30">November 30, 2025</time>
-        </div>
-        
-        <p><p>Welcome to my digital corner! This is the beginning of something glitchy and fun.</p>
-<h2 id="why-this-site">Why this site?</h2>
-<p>I created this space to share my projects, thoughts, and experiments with the world. A place where code meets creativity and chaos.</p>
-<h2 id="what-to-expect">What to expect</h2>
-<p>On this site you&rsquo;ll find:</p>
+<p>For this site, I created a custom glitchy theme inspired by Porygon with:</p>
 <ul>
-<li><strong>Blog</strong>: Technical articles, reflections, and random thoughts</li>
-<li><strong>Portfolio</strong>: My projects and creations</li>
-<li><strong>Chaos Zone</strong>: Pure digital chaos - experiments, glitch art, and things that shouldn&rsquo;t exist</li>
+<li>Custom CSS in <code>assets/css/main.css</code></li>
+<li>Pink and cyan color palette</li>
+<li>Glitch animations and effects</li>
+<li>Responsive design</li>
 </ul>
-<h2 id="the-aesthetic">The aesthetic</h2>
-<p>If you&rsquo;re wondering about the glitchy pink and cyan theme - it&rsquo;s inspired by Porygon, the digital Pokémon. A tribute to the beautiful chaos of the digital world.</p></p>
+<h2 id="deployment-to-github-pages">Deployment to GitHub Pages</h2>
+<p>The site automatically deploys to GitHub Pages using GitHub Actions whenever I push to the main branch.</p>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>Use <code>hugo server -D</code> to preview with drafts</li>
+<li>Use <code>hugo new posts/my-post.md</code> to create new posts</li>
+<li>Keep your layouts modular and reusable</li>
+<li>Test locally before pushing</li>
+</ul>
+<p>Hugo is perfect for blogs, portfolios, and documentation sites!</p>
+
+    </div>
+    
+    
+    <nav style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ecf0f1;">
         
-        <a href="/posts/primo-post/">Read more →</a>
-    </li>
+        <div style="margin-bottom: 0.5rem;">← <a href="/posts/primo-post/">Welcome to PORYGON.ZONE</a></div>
+        
+        
+    </nav>
     
-</ul>
-
-<p style="text-align: center; margin-top: 2rem;">
-    <a href="/posts/" class="btn">View all posts →</a>
-</p>
-
-<style>
-.home-hero {
-    text-align: center;
-    padding: 4rem 0;
-    margin-bottom: 3rem;
-    border-bottom: 2px solid var(--porygon-blue);
-    position: relative;
-    overflow: hidden;
-}
-
-.home-hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    border: none;
-    padding: 0;
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-    color: var(--porygon-cyan);
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-.hero-description {
-    color: var(--text-main);
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.home-sections {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
-}
-
-.home-hero::before,
-.home-hero::after {
-    content: '';
-    position: absolute;
-    width: 240px;
-    height: 240px;
-    opacity: 0.12;
-    mix-blend-mode: screen;
-    clip-path: polygon(50% 0%, 100% 40%, 80% 100%, 20% 100%, 0 40%);
-    filter: blur(0.5px);
-}
-
-.home-hero::before {
-    background: var(--porygon-pink);
-    top: -80px;
-    left: -40px;
-    transform: rotate(18deg);
-}
-
-.home-hero::after {
-    background: var(--porygon-blue);
-    bottom: -90px;
-    right: -30px;
-    transform: rotate(-12deg);
-}
-
-.section-card {
-    background: rgba(0, 206, 209, 0.05);
-    border: 2px solid var(--porygon-blue);
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.section-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--porygon-pink);
-    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
-}
-
-.section-card::after {
-    content: '';
-    position: absolute;
-    inset: 20% 10% auto auto;
-    width: 90px;
-    height: 90px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0 40%);
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-.section-card:hover::after {
-    opacity: 0;
-}
-
-.section-card h2 {
-    margin-top: 0;
-    color: var(--text-bright);
-    border: none;
-    padding: 0;
-}
-
-.chaos-card {
-    background: rgba(255, 105, 180, 0.1);
-    border-color: var(--porygon-pink);
-    animation: chaosGlow 3s infinite;
-}
-
-@keyframes chaosGlow {
-    0%, 100% {
-        box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
-    }
-    50% {
-        box-shadow: 0 0 25px rgba(0, 206, 209, 0.5);
-    }
-}
-
-@media (max-width: 768px) {
-    .home-hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .home-sections {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
+</article>
 
         </main>
     </div>
