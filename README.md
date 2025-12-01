@@ -2,7 +2,7 @@
 
 Blog personale creato con Hugo e ospitato su GitHub Pages.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisiti
 
@@ -35,7 +35,7 @@ hugo --minify
 
 I file generati saranno nella cartella `public/`.
 
-## 📝 Struttura
+## Struttura
 
 ```
 .
@@ -47,7 +47,7 @@ I file generati saranno nella cartella `public/`.
 └── hugo.toml      # Configurazione
 ```
 
-## 🌐 Deploy
+## Deploy
 
 Il sito viene automaticamente pubblicato su GitHub Pages quando fai push sul branch `main`.
 
@@ -57,11 +57,11 @@ Il sito viene automaticamente pubblicato su GitHub Pages quando fai push sul bra
 2. Source: GitHub Actions
 3. Il workflow si occuperà del resto!
 
-## 📄 Licenza
+## Licenza
 
 MIT
 
-## 👤 Autore
+## Autore
 
 **Porygone**
 
